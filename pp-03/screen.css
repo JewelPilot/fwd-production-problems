@@ -53,8 +53,23 @@ width: 100vw;
 }
 
 @media screen and (min-width: 800px) {
+#content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
   #one, #two, #three{
       width: 33.33333333vw;
       height: 33.33333333vw;
     }
+
+#one {
+    order: -1;
+  }
+  #two {
+    order: 0;
+  }
+  #three {
+    order: 1;
+  }
 }
