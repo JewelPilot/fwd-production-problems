@@ -53,5 +53,8 @@ width: 100vw;
 }
 
 @media screen and (min-width: 800px) {
-
+  #one, #two, #three{
+      width: 33.33333333vw;
+      height: 33.33333333vw;
+    }
 }
