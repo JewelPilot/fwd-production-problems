@@ -31,7 +31,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   display:flex;
   flex-direction:row;
   flex-wrap: wrap;
-flex-flow:row wrap-reverse;
+ flex-flow:row wrap-reverse;
 }
 section{
 
@@ -46,7 +46,10 @@ width: 100vw;
 }
 
 @media screen and (min-width: 600px) {
-
+  #two, #one{
+      width: 50vw;
+      height: 50vw;
+    }
 }
 
 @media screen and (min-width: 800px) {
