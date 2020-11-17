@@ -3,25 +3,26 @@
   call outputs the correct value for x (5). You must still use
   `x` as the variable inside the function, however.
 */
+// x = 5;
+
+// function double(num) {
+//   x = num * 2;
+//   return x;
+// }
 (function() {
-var x = 5;
-function double(num) {
-  var x = num * 2;
-  try {
-        var a = x-5;
-        x = num * 2;
-      }
-      catch(err) {
-        x = "invalid input";
-      }
-  //return x;
-}
-
-
-double(6);
-console.log('The value of x is', x, '-- it should be 5.');
+  var x = 5;
+  function double(num) {
+    if (typeof x == "number") {
+      x = num * 2;
+    }
+    else {
+      x = "not an number";
+    }
+    // return x;
+  }
+  console.log('The value of x is', x, '-- it should be 5.');
+  double(6);
 })();
-
 
 
 
