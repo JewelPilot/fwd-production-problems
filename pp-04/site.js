@@ -6,13 +6,13 @@
 (function() {
 var x = 5;
 function double(num) {
-  var x = num * 2;
+  //var x = num * 2;
   try {
         var a = x-5;
         x = num * 2;
       }
       catch(err) {
-        x = "invalid number";
+        x = "invalid input";
       }
   //return x;
 }
