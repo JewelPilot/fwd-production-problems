@@ -7,7 +7,14 @@
 var x = 5;
 function double(num) {
   var x = num * 2;
-  return x;
+  try {
+        var a = x-5;
+        x = num * 2;
+      }
+      catch(err) {
+        x = "invalid number";
+      }
+  //return x;
 }
 
 
